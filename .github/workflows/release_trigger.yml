@@ -1,0 +1,14 @@
+name: "Release Trigger"
+
+on:
+  repository_dispatch:
+    type: [release_trigger]
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    strategy:
+    steps:
+    - name: List Repo Name 
+      run: |
+        echo "It Lives!"
