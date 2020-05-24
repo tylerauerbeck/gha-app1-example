@@ -8,6 +8,6 @@ jobs:
   trigger:
     runs-on: ubuntu-latest
     steps:
-    - name: List Repo Name 
+    - name: Release Name
       run: |
-        echo Hello_World
+        echo ${{ github.event.client_payload.release_name }}
