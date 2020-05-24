@@ -7,7 +7,6 @@ on:
 jobs:
   trigger:
     runs-on: ubuntu-latest
-    strategy:
     steps:
     - name: List Repo Name 
       run: |
